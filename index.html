@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Introducción al Hardware — Resumen</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --text:#0b0b0b;
+    --accent:#0b5cff;
+    --muted:#3d3d3d;
+    --card:#f7f9ff;
+  }
+  html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+  body{background:var(--bg);color:var(--text);line-height:1.45;padding:0 1rem;}
+  a{color:var(--accent);text-decoration:none;}
+  a:focus{outline:3px solid #ffd54f; outline-offset:2px;}
+  header{background:var(--card);padding:1rem;border-radius:12px;margin-top:1rem;box-shadow:0 2px 6px rgba(11,92,255,0.06);}
+  .container{max-width:980px;margin:0 auto;}
+  nav{display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;}
+  nav a{padding:.45rem .6rem;border-radius:8px;font-weight:600;background:transparent;}
+  nav a:hover{background:rgba(11,92,255,0.06);}
+  main{margin:1rem 0;}
+  h1{font-size:clamp(1.4rem,2.5vw,2rem);margin:.2rem 0;}
+  h2{font-size:1.25rem;margin:0.8rem 0;border-bottom:2px solid #e9eefc;padding-bottom:.3rem;}
+  section{background: #fff;padding:1rem;border-radius:10px;margin:1rem 0;box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+  .two-col{display:grid;grid-template-columns:1fr;gap:1rem;}
+  .infobox{font-size:.95rem;color:var(--muted);}
+  footer{font-size:.9rem;color:var(--muted);padding:1rem 0;text-align:center;}
+  /* Accessibility helpers */
+  .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+  .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;color:#fff;padding:.4rem;border-radius:6px;z-index:1000;}
+  /* Responsive */
+  @media(min-width:720px){
+    .two-col{grid-template-columns:2fr 1fr;}
+  }
+</style>
+</head>
+<body>
+  <a href="#maincontent" class="skip-link">Saltar al contenido principal</a>
+  <div class="container">
+    <header role="banner" aria-label="Encabezado principal">
+      <h1>Introducción al hardware de equipos personales — Resumen</h1>
+      <nav role="navigation" aria-label="Navegación principal">
+        <a href="#contexto">Contexto</a>
+        <a href="#como-funciona">¿Cómo funciona?</a>
+        <a href="#aplicaciones">Aplicaciones / Relevancia</a>
+        <a href="#conclusiones">Conclusiones</a>
+        <a href="#referencias">Referencias (APA 7)</a>
+      </nav>
+      <p class="infobox">Resumen construido a partir del ensayo y la infografía provistos por el usuario.</p>
+    </header>
+
+    <main id="maincontent" role="main" tabindex="-1">
+      <section id="contexto">
+        <h2>Contexto</h2>
+        <div class="two-col">
+          <div>
+            <p>La era digital contemporánea insiste en la interacción constante entre personas y sistemas computacionales; sin embargo, el hardware —los componentes físicos— suele ser menos visible para el público que el software. Este resumen sintetiza las ideas centrales sobre arquitectura interna, seguridad eléctrica y tendencias tecnológicas fundamentales para el trabajo profesional en multimedia.</p>
+
+            <p>El material original detalla la importancia del equilibrio entre CPU, GPU, memoria y almacenamiento para evitar cuellos de botella en flujos de trabajo de edición 4K, render y simulación. También enfatiza normas de seguridad ESD y la relevancia de soluciones térmicas avanzadas para mantener un rendimiento sostenido.</p>
+          </div>
+
+          <aside>
+            <h3>Infografía (visual)</h3>
+            <object data="infografía.pdf" type="application/pdf" width="100%" height="350" aria-label="Infografía sobre arquitectura esencial del hardware.">
+              <p>Tu navegador no muestra PDFs incrustados. <a href="infografía.pdf">Descargar la infografía (PDF)</a></p>
+            </object>
+
+            <p style="font-size:.85rem;color:#666;margin-top:.5rem;">
+              Texto alternativo de la infografía: "Diagrama que muestra motherboard como columna vertebral, flujo de datos CPU→RAM→GPU→salida; comparativa HDD/SATA SSD/NVMe; PSU; seguridad ESD; refrigeración."
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="como-funciona">
+        <h2>¿Cómo funciona?</h2>
+        <p>El sistema computacional coordina componentes físicos: la placa madre orquesta conexiones (socket, VRM, ranuras PCIe y M.2), la CPU ejecuta instrucciones, la RAM mantiene el estado temporal y la GPU acelera renderizados. El almacenamiento NVMe conectado por PCIe proporciona velocidades de lectura/escritura que reducen latencias en edición multimedia.</p>
+
+        <p class="infobox">Puntos clave: evitar cuellos de botella, preferir NVMe, usar buena refrigeración.</p>
+      </section>
+
+      <section id="aplicaciones">
+        <h2>Aplicaciones / Relevancia</h2>
+        <ul>
+          <li>Producción audiovisual: edición 4K y render requieren SSD NVMe + ≥32GB RAM.</li>
+          <li>Render 3D: GPU con mucha VRAM y buena disipación térmica.</li>
+          <li>Estaciones de trabajo: PSUs eficientes (80 Plus) y sistemas modulares.</li>
+          <li>Sostenibilidad: hardware modular reduce e-waste.</li>
+        </ul>
+      </section>
+
+      <section id="conclusiones">
+        <h2>Conclusiones</h2>
+        <p>El rendimiento depende del equilibrio entre componentes; la seguridad ESD es esencial; la refrigeración determina desempeño sostenido; el NVMe es crucial en multimedia; elegir hardware responsable mejora la sostenibilidad.</p>
+      </section>
+
+      <section id="referencias">
+        <h2>Referencias (APA 7)</h2>
+        <ol>
+          <li>IEEE. (2023). Evolución de los estándares de conectividad de alta velocidad.</li>
+          <li>Intel. (2022). NVMe and its role in Client Storage.</li>
+          <li>Gartner. (2020). Sustainable IT.</li>
+          <li>Norton, P. (2017). Introducción a la computación.</li>
+          <li>Patterson, D. & Hennessy, J. (2021). Computer Organization and Design.</li>
+          <li>Smith, J. (2020). Thermal Management in High-Performance Computing.</li>
+          <li>Stallings, W. (2016). Computer Organization and Architecture.</li>
+          <li>Tanenbaum, A. & Bos, H. (2015). Structured Computer Organization.</li>
+        </ol>
+      </section>
+
+     </main>
+
+    <footer>
+      <p>Página creada para entrega académica.  
+      <a href="infografía.pdf">Descargar infografía</a> —  
+      <a href="ensayo.docx">Descargar ensayo</a></p>
+    </footer>
+  </div>
+</body>
+</html>
